@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="js/fontawesome.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>!</title>
+  </head>
+  <body>
+    <time id="time"></time>
+    <h1>
+      <span id="greeting"></span>
+      <span id="name" contenteditable="true">(Enter Name Here)</span>
+    </h1>
+
+    <h2>What Is your Focus For Today?</h2>
+    <h3
+      id="focus"
+      contenteditable="true"
+      data-placeholder="(Enter Focus Here)"
+    ></h3>
+
+    <div id="weather">
+      <div class="weather-temperature">
+        <span class="temperature-degrees" id="temperature-degrees"></span>
+        <span class="temperature-type" id="temperature-type">C</span>
+      </div>
+      <canvas class="icon" id="skycon" width="64" height="64"></canvas>
+
+      <span class="weather-summary" id="weather-summary"
+        >Constant Light Showers</span
+      >
+      <span class="weather-location" id="weather-location"
+        >Tacarigua, Trinidad</span
+      >
+    </div>
+
+    <div class="container" id="checklist">
+      <div class="header">
+        <div id="date"></div>
+        <div class="clear">
+          <i class="fa fa-refresh"></i>
+        </div>
+      </div>
+      <div class="content">
+        <ul id="list"></ul>
+        <!-- <li class="item">
+          <i class="fa fa-circle-thin co" job="complete" id="0"></i>
+          <p class="text">Drink Coffee</p>
+          <i class="fa fa-trash-o de" job="delete" id="0"></i>
+        </li> -->
+      </div>
+      <div class="add-to-do">
+        <input
+          type="text"
+          id="input"
+          placeholder="Daily Tasks (30 character max)"
+          maxlength="30"
+        />
+      </div>
+    </div>
+
+    <script src="js/tasks.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/skycons.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>

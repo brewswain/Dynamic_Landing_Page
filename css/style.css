@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  color: black;
+}
+
+#time {
+  font-size: 8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 700px) {
+  #time {
+    font-size: 6rem;
+  }
+}
+
+#weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  z-index: 1;
+  background-color: rgba(63, 63, 63, 0.45);
+  width: 200px;
+  height: 150px;
+  border-radius: 6px;
+}
+
+.weather-summary {
+  position: absolute;
+  top: 11vh;
+  right: 0.5vh;
+  font-weight: 400;
+  color: white;
+  font-size: 1rem;
+}
+.weather-location {
+  position: absolute;
+  top: 9vh;
+  right: 0.5vh;
+  font-weight: 900;
+  color: white;
+  font-size: 1rem;
+}
+
+#skycon {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  top: 1%;
+  right: 3%;
+}
+.weather-temperature {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 200;
+  position: absolute;
+  top: 15%;
+  color: white;
+  right: 40%;
+}
+
+.temperature-display {
+  font-size: 2rem;
+}
+
+.temperature-type {
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.location-info {
+  position: absolute;
+}
+
+/* To Do list */
+#checklist {
+  position: absolute;
+  bottom: 3%;
+  right: 1%;
+  color: white;
+  background-color: rgba(63, 63, 63, 0.75);
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  background-color: rgba(24, 24, 24, 0.5);
+  padding: 5px;
+}
+
+.content {
+  min-width: 350px;
+  min-height: 200px;
+}
+
+input {
+  max-width: 30ch;
+  word-wrap: break-word;
+}
+.item {
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+}
+.co {
+  z-index: 50;
+  cursor: pointer;
+}
+.text {
+  position: absolute;
+  left: 10%;
+  font-size: 1.2rem;
+}
+
+.add-to-do {
+  margin-top: 20px;
+}
+.de {
+  z-index: 50;
+  cursor: pointer;
+}
+input {
+  position: relative;
+  border: 0;
+  width: 100%;
+  height: 40px;
+  bottom: 100%;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+li {
+  text-align: right;
+  font-size: 1.5rem;
+  list-style: none;
+  margin: 0;
+}
+
+span[data-placeholder]:not(:focus):not([data-span-placeholder-content]):before {
+  content: attr(data-placeholder);
+
+  float: left;
+
+  margin-left: 2px;
+
+  color: #b3b3b3;
+}
+
+.lineThrough {
+  text-decoration: line-through;
+  color: #ccc;
+  opacity: 0.7;
+}
